@@ -103,10 +103,27 @@ section {
 
 aside {
 
+    height:2000px;
     float:left;
     width:20%;
     margin-right: auto;
     margin-top:5%;
     margin-left:2%;
+    padding-left: 20px;
+    border-left:1px solid grey;
+    font-size: 15px;
+    
+}
+
+footer {
+    
+    clear:both;
+    width:100%;
+    height:100px;
+    margin:0;
+    background-color:#212121;
+    color: #d84315;
+    text-align:center;
+    padding-top:25px;
     
 }
