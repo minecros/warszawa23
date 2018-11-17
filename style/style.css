@@ -45,6 +45,7 @@ nav {
 .menu a {
     text-decoration: none;
     color: white;
+    
 }
 
 .menu a:hover {
@@ -103,7 +104,7 @@ section {
 
 aside {
 
-    height:2000px;
+    height:1500px;
     float:left;
     width:20%;
     margin-right: auto;
@@ -112,6 +113,22 @@ aside {
     padding-left: 20px;
     border-left:1px solid grey;
     font-size: 15px;
+    
+}
+#tresc {
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+article {
+    
+}
+.one {
+    float:left;
+    width:30%;
+    margin-top:3%;
+    margin-left:20px;
     
 }
 

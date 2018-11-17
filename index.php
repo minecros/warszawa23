@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Warszawa23.pl</title>
+    <link rel="icon" href="grafika/icon.png" type="image/gif" >
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 <li><a href="index.php"><i class="material-icons">fitness_center</i><br>SIŁOWNIE</a></li>
                 <li><a href="index.php"><i class="material-icons">filter</i><br>GALERIE</a></li>
                 <li><a href="index.php"><i class="material-icons">insert_comment</i><br>FORUM</a></li>
-                <li><a href="index.php" style="color: #0277bd"><i class="material-icons">people</i><br>Twoja W23</a></li>
+                <li><a href="logowanie.php" style="color: #0277bd"><i class="material-icons">people</i><br>Twoja W23</a></li>
             </ul>
         </nav>
     </header>
@@ -59,7 +60,25 @@
             In vel turpis justo. Pellentesque eget dolor aliquet, varius justo a, euismod est. Aenean ipsum nisl, posuere id accumsan ac, consequat non libero. Praesent metus felis, porttitor sit amet ornare eget, varius non augue. Vestibulum eu ex a metus auctor volutpat. Aliquam sodales tempus leo non fringilla. Ut elementum dolor augue, nec varius enim mattis in. Quisque sed lectus eu neque consectetur cursus et a lorem. In pellentesque quam eget dui malesuada, eget sodales urna tincidunt. Nam iaculis, nunc in bibendum lacinia, orci ipsum ullamcorper magna, quis congue ante libero quis ipsum. Mauris vel massa at nunc sollicitudin condimentum. Curabitur porta nulla eu tortor ullamcorper, id pellentesque tellus venenatis. Ut magna libero, malesuada ac magna sed, tempus imperdiet augue.
 
             Morbi nec tortor ut orci sollicitudin lacinia vel sed nibh. Aliquam at porta massa. Cras aliquet fringilla tincidunt. In pulvinar sollicitudin mi nec cursus. Donec fringilla velit ac tellus gravida dictum. Quisque dictum turpis vestibulum nibh tincidunt tincidunt. Maecenas scelerisque fermentum erat nec consectetur. Vestibulum et felis vitae erat egestas lobortis et in elit. Fusce convallis hendrerit magna, eget ornare neque commodo nec. Nunc sit amet risus eget neque imperdiet mollis ac a nisi. Nunc vitae pharetra quam, sed lobortis nisl.
-        </article>
+        
+            </article>
+        
+        <div id="tresc">
+            
+        <article class="one">Morbi nec tortor ut orci sollicitudin lacinia vel sed nibh. Aliquam at porta massa. Cras aliquet fringilla tincidunt. In pulvinar sollicitudin mi nec cursus. Donec fringilla velit ac tellus gravida dictum. Quisque dictum turpis vestibulum nibh tincidunt tincidunt. Maecenas scelerisque fermentum erat nec consectetur. Vestibulum et felis vitae erat egestas lobortis et in elit. Fusce convallis hendrerit magna, eget ornare neque commodo nec. Nunc sit amet risus eget neque imperdiet mollis ac a nisi. Nunc vitae pharetra quam, sed lobortis nisl.</article>
+        <article class="one">Morbi nec tortor ut orci sollicitudin lacinia vel sed nibh. Aliquam at porta massa. Cras aliquet fringilla tincidunt. In pulvinar sollicitudin mi nec cursus. Donec fringilla velit ac tellus gravida dictum. Quisque dictum turpis vestibulum nibh tincidunt tincidunt. Maecenas scelerisque fermentum erat nec consectetur. Vestibulum et felis vitae erat egestas lobortis et in elit. Fusce convallis hendrerit magna, eget ornare neque commodo nec. Nunc sit amet risus eget neque imperdiet mollis ac a nisi. Nunc vitae pharetra quam, sed lobortis nisl.</article>
+        <article class="one">Morbi nec tortor ut orci sollicitudin lacinia vel sed nibh. Aliquam at porta massa. Cras aliquet fringilla tincidunt. In pulvinar sollicitudin mi nec cursus. Donec fringilla velit ac tellus gravida dictum. Quisque dictum turpis vestibulum nibh tincidunt tincidunt. Maecenas scelerisque fermentum erat nec consectetur. Vestibulum et felis vitae erat egestas lobortis et in elit. Fusce convallis hendrerit magna, eget ornare neque commodo nec. Nunc sit amet risus eget neque imperdiet mollis ac a nisi. Nunc vitae pharetra quam, sed lobortis nisl.</article>
+            
+            
+        
+        <article class="one">Morbi nec tortor ut orci sollicitudin lacinia vel sed nibh. Aliquam at porta massa. Cras aliquet fringilla tincidunt. In pulvinar sollicitudin mi nec cursus. Donec fringilla velit ac tellus gravida dictum. Quisque dictum turpis vestibulum nibh tincidunt tincidunt. Maecenas scelerisque fermentum erat nec consectetur. Vestibulum et felis vitae erat egestas lobortis et in elit. Fusce convallis hendrerit magna, eget ornare neque commodo nec. Nunc sit amet risus eget neque imperdiet mollis ac a nisi. Nunc vitae pharetra quam, sed lobortis nisl.</article>
+        <article class="one">Morbi nec tortor ut orci sollicitudin lacinia vel sed nibh. Aliquam at porta massa. Cras aliquet fringilla tincidunt. In pulvinar sollicitudin mi nec cursus. Donec fringilla velit ac tellus gravida dictum. Quisque dictum turpis vestibulum nibh tincidunt tincidunt. Maecenas scelerisque fermentum erat nec consectetur. Vestibulum et felis vitae erat egestas lobortis et in elit. Fusce convallis hendrerit magna, eget ornare neque commodo nec. Nunc sit amet risus eget neque imperdiet mollis ac a nisi. Nunc vitae pharetra quam, sed lobortis nisl.</article>
+        <article class="one">Morbi nec tortor ut orci sollicitudin lacinia vel sed nibh. Aliquam at porta massa. Cras aliquet fringilla tincidunt. In pulvinar sollicitudin mi nec cursus. Donec fringilla velit ac tellus gravida dictum. Quisque dictum turpis vestibulum nibh tincidunt tincidunt. Maecenas scelerisque fermentum erat nec consectetur. Vestibulum et felis vitae erat egestas lobortis et in elit. Fusce convallis hendrerit magna, eget ornare neque commodo nec. Nunc sit amet risus eget neque imperdiet mollis ac a nisi. Nunc vitae pharetra quam, sed lobortis nisl.</article>
+        
+        
+        
+        </div>
+        
     </section>
 
     <aside>
