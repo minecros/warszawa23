@@ -82,6 +82,11 @@
         }
 
 
+    if(isset($_SESSION['e_login'])){
+        
+            echo '<div id="komunikat">'.$_SESSION['udaana_rejestracja'].'</div>';
+            unset($_SESSION['udana_rejestracja']);
+    }
     
     ?>
 

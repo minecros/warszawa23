@@ -37,7 +37,7 @@
             <li><a href="">KAMERY</a></li>
             <li><a href="">POGODA</a></li>
             <li><a href="">SAMORZĄD</a></li>
-            <li><a href="">PIZZA</a></li> 
+            <li><a href="">PIZZA</a></li>
             <li><a href="">DANIA</a></li>
             <li><a href="">MKS</a></li>
             <li><a href="">BUSY</a></li>
@@ -49,19 +49,45 @@
     </div>
 
     <form id="logowanie" name="logowanie" method="post" action="skrypty/rejestracja_skrypt.php">
-        
+
         <input type="text" placeholder="login" name="login">
         <input type="email" placeholder="email" name="email">
         <input type="password" placeholder="haslo" name="haslo1">
         <input type="password" placeholder="powtórz hasło" name="haslo2">
         <label><input type="checkbox" name="regulamin"> Akceptujesz regulamin? </label>
         <input type="submit" value="Utwórz konto">
-        
-        
-    
+
+
+
     </form>
 
+    <?php
+    if(isset($_SESSION['e_login'])){
+        
+            echo '<div id="blad">'.$_SESSION['e_login'].'</div>';
+            unset($_SESSION['e_login']);
+    }
+    if(isset($_SESSION['e_email'])){
+        
+            echo '<div class="blad">'.$_SESSION['e_email'].'</div>';
+            unset($_SESSION['e_email']);
+    } 
     
+    if(isset($_SESSION['e_haslo'])){
+        
+            echo '<div class="blad">'.$_SESSION['e_haslo'].'</div>';
+            unset($_SESSION['e_haslo']);
+    } 
+    
+    if(isset($_SESSION['e_check'])){
+        
+            echo '<div class="blad">'.$_SESSION['e_check'].'</div>';
+            unset($_SESSION['e_check']);
+    }
+    
+    ?>
+
+
 
     <footer>
         <h2>WARSZAWA23.PL</h2>
