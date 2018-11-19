@@ -3,6 +3,7 @@
 session_start();
 require_once "polaczenie.php";
 
+
 $polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
 
 if($polaczenie->connect_errno!=0){
@@ -20,7 +21,7 @@ if($polaczenie->connect_errno!=0){
     $email = $_POST['email'];
     $check = $_POST['regulamin'];
     
-    if(isset($email)){
+  /*  if(isset($email)){
         
         //flaga poprawnosci
         $czyok = true;
@@ -73,21 +74,27 @@ if($polaczenie->connect_errno!=0){
         
         
         //udana walidacja, mozemy dodac konto uzytkownika
-        if($czyok == true){
+        if($czyok == true){*/
             
             if($polaczenie->connect_errno!=0){
                 echo "Error".$polaczenie->connect_errno;
             }else{
                 
                 $zap_czyistnieje = 'select login,email from uzytkownicy where login="'.$login.'" or email="'.$email.'"';
+                echo $zap_czyistnieje;
+                echo 1;
                 
                 if($rezultat = $polaczenie->query($zap_czyistnieje)){
                     
+                    
                     if($rezultat->num_rows > 0){
                         
+                        
                        $_SESSION['blad'] = "Istnieje użytkownik o podanym adresie email lub loginie";
+                        header('Location: ../logowanie.php');
                         
                     }else{
+                        
                         
                         $haslo_hash = password_hash($haslo1, PASSWORD_DEFAULT);
                         
@@ -96,12 +103,17 @@ if($polaczenie->connect_errno!=0){
                         
                         //udalo sie dodac dane do bazy
                         if($polaczenie->query($zap_rejestracja)){
+                            
+                            $polaczenie->close();
                             $_SESSION['udana_rejestracja'] = "Zaloguj się aby dokończyć proces rejestracji";
-                            header("Location:../logowanie.php");
+                            
+                            header('Location: ../logowanie.php');
                             
                         }else{
                             //gdy dodawanie uzytkownoka nie powiodlo sie
-                            echo "dodawanie uzytkonika nie powiodlo sie";
+                            $polaczenie->close();
+                            $_SESSION['blad_rejestracji'] = "dodawanie uzytkonika nie powiodlo sie";
+                            header('Location: ../logowanie.php');
                         }
                         
                     }
@@ -112,8 +124,8 @@ if($polaczenie->connect_errno!=0){
         }
         
         
-    }
-}
+    //}
+//}
 
 
 ?>

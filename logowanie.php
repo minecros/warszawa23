@@ -21,7 +21,7 @@
 
 
             <ul class="menu">
-                <li><label><a href="index.php"><i class="material-icons">work</i><br>WARSZAWA23</a></label></li>
+                <li><label><a href="index.php"><img src="grafika/logo.png" width="250px" ></a></label></li>
                 <li><a href="index.php"><i class="material-icons">work</i><br>PRACA</a></li>
                 <li><a href="index.php"><i class="material-icons">motorcycle</i><br>ANONSE</a></li>
                 <li><a href="index.php"><i class="material-icons">school</i><br>SZKOŁY</a></li>
@@ -49,13 +49,28 @@
         <hr>
     </div>
 
+    <div style="height:600px; text-align:center;">
     <?php
-        
+        session_start();
+    
         if(isset($_SESSION['login'])){
             
             //gdy uzytkownik jest juz zalogowany
-            
-            
+        
+            echo 'Witaj '.$_SESSION['login'].'<br>';
+            ?>
+    <form name="wyloguj" method="post">
+    <input type="submit" value="Wyloguj" name="wyloguj">
+    </form>
+    </div>
+    
+    <?php
+            if(isset($_POST['wyloguj'])){
+                
+                unset($_SESSION['login']);
+                header("Location: logowanie.php");
+                
+            }
             
         }else{
             
@@ -82,9 +97,9 @@
         }
 
 
-    if(isset($_SESSION['e_login'])){
+    if(isset($_SESSION['udana_rejestracja'])){
         
-            echo '<div id="komunikat">'.$_SESSION['udaana_rejestracja'].'</div>';
+            echo '<div id="komunikat">'.$_SESSION['udana_rejestracja'].'</div>';
             unset($_SESSION['udana_rejestracja']);
     }
     
@@ -93,7 +108,7 @@
 
 
     <footer>
-        <h2>WARSZAWA23.PL</h2>
+        <img src="grafika/logo.png" width="250px" >
 
     </footer>
 </body>

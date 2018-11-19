@@ -20,7 +20,7 @@
 
 
             <ul class="menu">
-                <li><label><a href="index.php"><i class="material-icons">work</i><br>WARSZAWA23</a></label></li>
+                <li><label><a href="index.php"><img src="grafika/logo.png" width="250px" ></a></label></li>
                 <li><a href="index.php"><i class="material-icons">work</i><br>PRACA</a></li>
                 <li><a href="index.php"><i class="material-icons">motorcycle</i><br>ANONSE</a></li>
                 <li><a href="index.php"><i class="material-icons">school</i><br>SZKOŁY</a></li>
@@ -61,36 +61,12 @@
 
     </form>
 
-    <?php
-    if(isset($_SESSION['e_login'])){
-        
-            echo '<div id="blad">'.$_SESSION['e_login'].'</div>';
-            unset($_SESSION['e_login']);
-    }
-    if(isset($_SESSION['e_email'])){
-        
-            echo '<div class="blad">'.$_SESSION['e_email'].'</div>';
-            unset($_SESSION['e_email']);
-    } 
-    
-    if(isset($_SESSION['e_haslo'])){
-        
-            echo '<div class="blad">'.$_SESSION['e_haslo'].'</div>';
-            unset($_SESSION['e_haslo']);
-    } 
-    
-    if(isset($_SESSION['e_check'])){
-        
-            echo '<div class="blad">'.$_SESSION['e_check'].'</div>';
-            unset($_SESSION['e_check']);
-    }
-    
-    ?>
+   
 
 
 
     <footer>
-        <h2>WARSZAWA23.PL</h2>
+        <img src="grafika/logo.png" width="250px" >
 
     </footer>
 </body>

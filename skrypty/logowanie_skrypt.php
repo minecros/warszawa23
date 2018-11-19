@@ -1,6 +1,6 @@
 <?php
     
-session_start;
+session_start();
 require_once "polaczenie.php";
 
 $polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
@@ -21,14 +21,21 @@ if($polaczenie->connect_errno!=0){
     
     if($rezultat = @$polaczenie->query($zapytanie_sql) == true){
         
-        @$ilu_userow = $rezultat->num_rows;
+        echo $zapytanie_sql;
+        echo $rezultat;
         
-        if($ilu_userow == 1){
+        
+        
+        if($rezultat == 1){
+            
             
             $_SESSION['login'] = $login;
+            $polaczenie->close();
+            header('Location: ../logowanie.php');
             
         }else{
             //nie udalo sie zalogowac
+            
         }
     }
     
